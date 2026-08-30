@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theoretical Mars Rover | MR-01</title>
+  <meta name="description" content="An artistic 3D concept for transportation on a future Mars colony.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+
+  <nav class="nav">
+    <div class="brand"><span class="dot"></span> THEORETICAL // MARS</div>
+    <div class="nav-links">
+      <a href="#vision">VISION</a>
+      <a href="#rover">ROVER</a>
+      <a href="#design">DESIGN</a>
+      <a href="#future">FUTURE</a>
+    </div>
+    <div class="status"><span></span> SYSTEM ONLINE</div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">MARS TRANSPORTATION CONCEPT // 2040+</p>
+        <h1>THEORETICAL<br><em>MARS ROVER</em></h1>
+        <p class="lede">A speculative vehicle designed for a future where Mars is no longer just a destination — it's a home.</p>
+        <a class="button" href="#rover">EXPLORE THE ROVER <span>↓</span></a>
+      </div>
+      <div class="hero-meta">
+        <div><b>MR-01</b><span>CONCEPT VEHICLE</span></div>
+        <div><b>01</b><span>OF 01</span></div>
+      </div>
+      <div class="scroll">SCROLL TO EXPLORE <span>↓</span></div>
+    </section>
+
+    <section id="vision" class="section vision">
+      <div class="section-number">01</div>
+      <div class="section-heading">
+        <p class="eyebrow">THE VISION</p>
+        <h2>FROM EXPLORATION<br>TO <em>TRANSPORTATION.</em></h2>
+      </div>
+      <div class="vision-text">
+        <p>After seeing futuristic visualizations of what a human settlement on Mars could look like, I started thinking about a simple question:</p>
+        <blockquote>“How would people actually get around?”</blockquote>
+        <p>Theoretical Mars Rover is my artistic answer — a speculative transportation vehicle for inhabitants of a future Martian colony.</p>
+      </div>
+    </section>
+
+    <section id="rover" class="section rover-section">
+      <div class="section-number">02</div>
+      <div class="section-heading">
+        <p class="eyebrow">INTERACTIVE MODEL</p>
+        <h2>MEET<br><em>MR-01.</em></h2>
+        <p class="hint">DRAG TO ROTATE · SCROLL TO ZOOM</p>
+      </div>
+      <div class="model-card">
+        <model-viewer
+          src="assets/mars-rover.glb"
+          camera-controls
+          auto-rotate
+          rotation-per-second="18deg"
+          shadow-intensity="1"
+          exposure="1"
+          camera-orbit="45deg 70deg 7m"
+          field-of-view="30deg"
+          alt="Interactive 3D model of the Theoretical Mars Rover">
+        </model-viewer>
+        <div class="model-label"><span>MR-01</span><span>INTERACTIVE 3D VIEW</span></div>
+      </div>
+    </section>
+
+    <section id="design" class="section design">
+      <div class="section-number">03</div>
+      <div class="section-heading">
+        <p class="eyebrow">BUILT IN BLENDER 3D</p>
+        <h2>FROM SIMPLE<br>SHAPES TO <em>MARS.</em></h2>
+      </div>
+      <div class="design-grid">
+        <div class="design-card large"><img src="assets/rover-hero.png" alt="Rendered view of the Mars Rover"><span>01 // FINAL RENDER</span></div>
+        <div class="design-card"><img src="assets/rover-side.png" alt="Side view of the Mars Rover"><span>02 // SIDE PROFILE</span></div>
+        <div class="design-card"><img src="assets/rover-front.png" alt="Front view of the Mars Rover"><span>03 // FRONT PROFILE</span></div>
+      </div>
+      <div class="process">
+        <div><strong>01</strong><span>MODELING</span><p>Built from primitive meshes including cubes, cylinders, planes, and spheres.</p></div>
+        <div><strong>02</strong><span>SCULPTING</span><p>Created the irregular Martian terrain from a sculpted plane.</p></div>
+        <div><strong>03</strong><span>TEXTURING</span><p>Used UV editing and texture painting to add graphics and surface detail.</p></div>
+        <div><strong>04</strong><span>LIGHTING</span><p>Applied materials, emission, and environmental lighting for the final render.</p></div>
+      </div>
+    </section>
+
+    <section id="future" class="section future">
+      <div class="section-number">04</div>
+      <div class="future-inner">
+        <p class="eyebrow">WHAT'S NEXT?</p>
+        <h2>THE FIRST RIDE<br>IS ONLY THE <em>BEGINNING.</em></h2>
+        <p>MR-01 is a concept, not a finished engineering specification. The next evolution could expand this single vehicle into an entire Martian transportation network — connecting habitats, research stations, and exploration zones across the planet.</p>
+        <div class="future-line"><span>HABITAT</span><i>—</i><span>MR-01</span><i>—</i><span>RESEARCH</span><i>—</i><span>EXPLORE</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>THEORETICAL MARS ROVER</div>
+    <div>DESIGNED & MODELED IN BLENDER 3D</div>
+    <div>CONCEPT / 2026</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
